@@ -18,11 +18,13 @@ Can we predict the next popular song. If so what genre will it be, who will sing
 # Data Set
 
 ```{r}
-#Found: https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks
+# Found: https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks
+# Renamed dataset.csv from webpage was renamed to Spotify.csv for clarity
 Spotify <- read.csv(file.path("Spotify.csv")) #Spotify
 head(Spotify)
 
-#Found: https://data.world/kcmillersean/billboard-hot-100-1958-2017
+# Found: https://data.world/kcmillersean/billboard-hot-100-1958-2017/workspace/file?filename=Hot+Stuff.csv
+# Remove Space from file download when reading in
 hot100 <- read.csv(file.path("HotStuff.csv")) #Billboard Data Set
 head(hot100)
 
